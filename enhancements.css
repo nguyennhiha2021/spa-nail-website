@@ -1,0 +1,47 @@
+/* Author: Ha Nguyen */
+/* Purpose: CSS Styles for Luna Nail&Spa website */
+
+/* Enhancements Styles */
+.title-container {
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    transform: translateY(6rem);
+    animation: up 500ms linear forwards;
+    z-index: 1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        width: 0px;
+        height: 1px;
+        left: 0;
+        z-index: -1; }
+    &::before {op: 1.4rem; animation: draw 500ms linear 1s forwards; }    
+    &::after {bottom: 0.4rem; animation: draw 500ms linear 1s forwards; } 
+} 
+
+@keyframes up {   
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes draw { 
+    100% {
+        width: 100%;
+    } 
+}
+
+
+#timer-display {
+    margin-top: -2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}

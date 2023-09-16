@@ -1,0 +1,290 @@
+/* Author: Ha Nguyen */
+/* Purpose: CSS Styles for Luna Nail&Spa website */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: lightpink;
+  color: #fff;
+  padding: 1% 2%;
+}
+
+nav ul {
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 2%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  float: right;
+  color: brown;
+  padding: 1% 2%;
+}
+
+section {
+  padding: 2% 5%;
+  margin-bottom: 2%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1% 5%;
+  text-align: center;
+  font-size: 80%;
+}
+
+/* Specific Styles */
+h1, h2, h3, h4 {
+  color: #333;
+}
+
+h1 {
+  font-variant: normal;
+  font-family: sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1%;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 1%;
+}
+
+p {
+  margin-bottom: 1%;
+}
+
+img {
+  margin: 2% 0;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+aside {
+  margin-top: -3%;
+  margin-right: 65%;
+  margin-bottom: 2%;
+  border: solid;
+  border-color: green;
+  width: 25%;
+  padding: 1%;
+  float: right;
+}
+
+table th,
+table td {
+  border: 1px solid #333;
+  padding: 1%;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table tr {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-top: 1%;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+form fieldset {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 3%;
+}
+
+form fieldset legend {
+  font-weight: bold;
+  margin-bottom: 1%;
+  font-size: 125%;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 1%;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: lightpink;
+}
+
+form input[type="submit"]:required {
+  background-color: lightpink;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: lightpink;
+}
+
+
+dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#photo {
+  float: right;
+}
+
+#photo figure {
+  margin-top: 2%;
+  border: 2px double;
+  padding: 2%;
+  max-width: 300px;
+}
+
+#timetable table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: lightgoldenrodyellow;
+}
+
+#payment-form {
+  margin: 2%;
+}
+
+/* Each page styles */
+ #index footer{ margin-top: 4%;}
+ #index p {text-align: center; } 
+ #index body {background-image: url("images/uyj-min.jpg"); }
+
+
+#product img {float: right; margin-bottom: 0px; margin-right: 150px; height: 100% ;} 
+#product footer {margin-top: 3%; max-width: 100%}
+#product body {background-image: url("images/nailspa2.jpg")}
+#product section ul { margin-bottom: -5%; }
+#product section ul li { line-height: 150% ; }
+#product ol li { line-height: 150%; margin-left: 3% }
+#product dl {line-height: 150%; margin-left: 5%; font-family: monospace;}
+
+#enquire body {background-image: url("images/nailspa.jpg")}
+#enquire footer { margin-top:3%;}
+
+#payment body {background-image: url("images/nailspa.jpg")}
+#payment footer { margin-top:3%;}
+#payment h3 {margin-top: -3%}
+
+#about footer{ margin-top:3%;} 
+#about dl {line-height: 150%;}
+#about body {background-image: url("images/image.jpg")}
+#about h2 {margin-left: 25%; margin-top: -5%}
+
+
+#enhancements img {margin-top: -50px; margin-left: -20px; }
+#enhancements body {background-image: url("images/nailspa3.jpg"); } 
+#enhancements footer{ margin-top: 14%;}
+
+#manager body {background-image: url("images/nailspa.jpg")}
+#manager footer {margin-top: 3%; max-width: 100%}
+
+#receipt body {background-image: url("images/nailspa3.jpg")}
+#receipt footer {margin-top: 19%; max-width: 100%}
+
+
+#log_in body {background-image: url("images/nailspa3.jpg")}
+#log_in form input[type="text"],
+form input[type="password"] {
+  width: 50%;
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+/* Fluid Page Flow */
+@media (max-width: 800px) {
+  header, section, footer {
+    padding: 2% 3%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  table {
+    width: 90%;
+  }
+
+}
